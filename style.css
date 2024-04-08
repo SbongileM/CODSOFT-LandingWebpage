@@ -39,3 +39,21 @@ button{
     color:hsl(25, 10%, 23%);
     background-color: rgb(4, 251, 12);
 }
+
+.classes{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	max-width: 1200px;
+	margin: 0 auto;
+	text-align: center;
+    gap:20px; 
+}
+
+.classes figure{
+    overflow: hidden;
+}
+
+.classes img{
+	object-fit: cover;
+
+}
