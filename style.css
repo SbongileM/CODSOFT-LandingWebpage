@@ -87,3 +87,19 @@ button{
     font-weight:bold;
     font-size: 1.5rem;
 }
+
+.Form input{
+    font-size: 1.3rem;
+    color:rgb(173, 241, 173);
+    background-color:hsla(120, 10%, 16%, 0.488);
+    border:none;
+    border-bottom: solid grey;
+    border-width: 0.1em;
+    padding: 1rem;
+    width: 400px;
+}
+
+.send{
+    font-size: 1rem;
+    margin-left: 19%;
+}

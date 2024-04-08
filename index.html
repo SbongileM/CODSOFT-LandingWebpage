@@ -16,12 +16,18 @@
         <a href="#" class="home">
           <img src="\Resources\logo.png" alt="Home" width="251" height="256" />
         </a>
+        <br>
+        <br>
+        <br>
         <div class="headline">
           <p>Become a healthier you with only R170 per month</p>
           <br>
+          <br>
           <h1>GET 50% OFF YOUR FIRST 2 MONTHS</h1>
           <br>
+          <br>
           <p>T&Cs Apply</p>
+          <br>
           <br>
           <a href="#"><button type="submit">Join now</button>
           </a>
@@ -30,6 +36,7 @@
       </div>
       <br>
       <h3>EXTRA CLASSES</h3>
+      <br>
       <br>
       <div class="classes">
         <figure>
@@ -42,34 +49,79 @@
           </figure>
       </div>
       <br>
+      <br>
+      <br>
+      <br>
       <h3>TESTIMONIALS</h3>
+      <br>
       <br>
       <div class="testimonials">
         <div class="testimonial-container">
           <div class="testimonial-text">
-            <pre class="testimonial-name">Nhlakanipho Simelane</pre>
+            <p class="testimonial-name">Nhlakanipho Simelane</p>
             <p>"A home away from home with exceptional and very supportive people, plus 
               the equipment and customer service is top tier"</p>
           </div>
         </div>
-  
         <div class="testimonial-container">
           <div class="testimonial-text">
-            <pre class="testimonial-name">Mbalenhle Sthole</pre>
+            <p class="testimonial-name">Mbalenhle Sthole</p>
             <p>"The mixture of aerobics and functional-training classes have been a needed aid to
                accelerate my weightloss journey. I highly recommend both classes."</p>
           </div>
         </div>
         <div class="testimonial-container">
           <div class="testimonial-text">
-            <pre class="testimonial-name">Sbongile Mdaki</pre>
+            <p class="testimonial-name">Sbongile Mdaki</p>
             <p>"The instructors are extremely helpful and friendly, they are able to accomodate both beginners
               and mature clients."</p>
           </div>
         </div>
       </div>
-
-
+      <br>
+      <div class="Form">
+        <p>Interested and neeed more info?</p>
+        <form action="server/get" method="get">
+          <p><legend>Get in touch:</legend></p>
+          <p>
+            <input
+              type="text"
+              name="First name"
+              placeholder="First Name"
+              required
+            />
+          </p>
+          <p>
+            <input
+              type="text"
+              name="Last name"
+              placeholder="Last Name"
+              required
+            />
+          </p>
+          <p>
+            <input type="email" name="email" placeholder="Email" required />
+          </p>
+          <p>
+            <input
+              type="tel"
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+              name="contact number"
+              placeholder="Phone number"
+              required
+            />
+          </p>
+        </form>
+        <br />
+        <button
+          class="send"
+          type="submit"
+          formaction="server"
+          formmethod="post"
+        >
+          Send a call back
+        </button>
+      </div>
     </main>
     <footer>
 
