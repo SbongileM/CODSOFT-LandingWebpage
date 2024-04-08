@@ -6,7 +6,7 @@
 }
 
 body{
-    background-color:hsla(225, 10%, 16%, 0.732);
+    background-color:hsla(120, 10%, 16%, 0.77);
 }
 
 .home img{
@@ -16,4 +16,26 @@ body{
 
 a{
     text-decoration: none;
+}
+
+main{
+    font-family: Consolas, 'Courier New', monospace;
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+    color:rgb(173, 241, 173);
+    padding-bottom: 2rem;
+    min-width: 300px;
+}
+
+
+button{
+    padding:0.8rem;
+    margin-bottom: 4rem;
+    border: none;
+    border-radius: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color:hsl(25, 10%, 23%);
+    background-color: rgb(4, 251, 12);
 }
