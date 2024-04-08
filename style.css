@@ -16,6 +16,7 @@ body{
 
 a{
     text-decoration: none;
+    color:rgb(173, 241, 173);
 }
 
 main{
@@ -102,4 +103,30 @@ button{
 .send{
     font-size: 1rem;
     margin-left: 19%;
+}
+
+footer{
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+    min-width: 300px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left:0;
+    display: grid;
+    font-size: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+    justify-items: center;
+}
+
+.labels{
+    color:rgb(173, 241, 173);
+    padding-bottom: 0.5rem;
+}
+
+.copyright{
+    color:rgb(129, 208, 129);
+    text-align: center;
+    font-size: 1.2rem;
 }
