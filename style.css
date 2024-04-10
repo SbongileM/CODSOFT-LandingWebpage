@@ -29,6 +29,11 @@ a {
   color: rgb(173, 241, 173);
 }
 
+a:visited,
+a:hover{
+    color: rgb(4, 251, 12);
+}
+
 /* Settings for main section */
 main {
   font-family: Consolas, "Courier New", monospace;
@@ -61,6 +66,10 @@ button {
   font-weight: bold;
   color: hsl(25, 10%, 23%);
   background-color: rgb(4, 251, 12);
+}
+
+button:hover{
+    background-color: rgb(122, 214, 122);
 }
 
 /* Sets layout template for extra classes */
