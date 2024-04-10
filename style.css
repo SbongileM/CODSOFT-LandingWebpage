@@ -33,6 +33,7 @@ main{
     color:rgb(173, 241, 173);
     padding-bottom: 2rem;
     min-width: 300px;
+    overflow: hidden;
 }
 
 h1{
@@ -75,22 +76,24 @@ button{
 }
 
 .testimonials {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-	gap: 20px;
-	max-width: 1200px;
-	margin: 0 auto;
-	text-align: center;
-}
+    display: flex;
+    gap: 15%;
+    margin: 0 auto;
+    animation-name: slide;
+    animation-duration: 30s; 
+    animation-iteration-count: infinite;
+  }
 
 .testimonial-container {
-	background-color: hsla(220, 10%, 23%, 0.687);
+    transition: all 2s ease;
+    background-color: hsla(220, 10%, 23%, 0.687);
 	border-radius: 12px;
 	padding: 30px;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 0 0 100%; 
     margin-bottom: 5rem;
 }
-
+  
 .testimonial-text {
 	margin-bottom: 20px;
     font-size: 1.2rem;
@@ -146,6 +149,48 @@ ul {
     font-size: 1rem;
 }
 
+@keyframes slide {
+    0% { 
+        transform: translateX(150%); 
+    }
+
+    25%{
+        transform: translateX(0%); 
+    }
+
+    50%{
+        transform: translateX(-115%); 
+    }
+
+    75% { 
+        transform: translateX(-230%); 
+    }
+
+    100%{
+        transform:translateX(-350%);
+    }
+  }
+
+  @media screen and (min-width: 460px) {
+    .Form input{
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 672px) {
+    .gradient{
+        margin-inline: 0;
+    }
+
+    .gradient2{
+        margin-inline: 0;
+    }
+
+    .classes{
+        gap: 0;
+    }
+}
+
 @media screen and (min-width: 355px) {
     .backgrnd{
         background-image: url("/Resources/Background.PNG"); 
@@ -172,29 +217,5 @@ ul {
     .logo{
         background-color:hsla(0, 0%, 100%, 0);
         border-bottom-style: none;
-    }
-}
-
-@media screen and (max-width: 672px) {
-	.testimonials {
-		grid-template-columns: 1fr;
-	}
-
-    .gradient{
-        margin-inline: 0;
-    }
-
-    .gradient2{
-        margin-inline: 0;
-    }
-
-    .classes{
-        gap: 0;
-    }
-}
-
-@media screen and (min-width: 460px) {
-    .Form input{
-        width: 400px;
     }
 }
