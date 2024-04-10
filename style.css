@@ -217,7 +217,7 @@ that is less than 627 pixels */
 that is greater than 355 pixels*/
 @media screen and (min-width: 355px) {
   .backgrnd {
-    background-image: url("/Resources/Background.PNG");
+    background-image: url("Resources/Background.PNG");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
